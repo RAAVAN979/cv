@@ -1,0 +1,160 @@
+<!doctype html>
+    <html>
+        <head>
+            <title>BISHAL PANDEY</title>
+            <meta name="author" content="BISHAL PANDEY">
+            <meta name="viewport" width="device-width, initial-scale=0">
+            <meta name="description" content="Welcome to my digitial resume">
+            <style>
+
+                body{
+                    background-color: rgb(27, 27, 27);
+                }
+                .logo{height: 90px; width: 90px;}
+
+                
+
+                .nav{display: felx;}
+
+                header{display: flex; padding: 10PX 10PX 10PX 10PX; margin-top: 0px;} 
+
+                nav{display: flex}
+
+                .text{display:flex ; flex-wrap: nowrap;
+                gap: 80px; margin-left:270px; position: fixed; padding: 10px 10px 5px 10px; border: transparent; border-radius: 20px; height: 30px; background-color: rgb(70, 70, 70);}
+
+             .icon{height: 20px; width: 20px; padding: 0px 0px 0px 0px; margin-left: 0px;}
+
+                li{font-size: 20px; 
+                list-style: none; cursor: pointer; color: silver; }
+
+                div header nav ul div{
+                    display: flex; gap: 5px;
+                }
+
+               div header nav ul  div li:hover{
+                    background-color: aqua;
+                    color: black; border: 2px solid orange; transition: 2s ; border-radius: 30px; padding: 10px 10px 10px 10px;
+                }
+
+                .logo:hover{cursor: pointer;
+                    filter: drop-shadow(4px 0px 5px white);
+                }
+
+                    .content{
+                        margin-top: 100px; border: 2px solid green; padding: 20px 20px 20px ;  display: flex;                  }
+
+                        .photo{float: right; height: 150px; width: 150px; border-radius: 10px;}
+
+                        .detail{color:aliceblue; font-size: 20px; font-family: cursive; margin-bottom: -10px;} 
+
+                        p{color:aliceblue; font-size: 18px;}
+                
+                        .social{
+                            display: flex; justify-content: center; align-items: center; gap: 20px; background-color: transparent;
+                        }
+
+                        .ins{
+                            height: 25px; width: 30px; border-radius: 30px; background-color: navajowhite;
+                        }
+
+                        .no:hover {
+                            position: absolute;
+                            left: 100px;
+                            transition: 2s ease-in;
+                            cursor: pointer;
+                          }
+
+            </style>
+            </head>
+            <body>
+                <img src="profile-pic.png" class="logo">
+                <div class="nav">
+                    <header>
+                        <nav>
+                           
+                               
+                                
+                               
+                                
+                                
+                                
+
+
+                                
+
+                                
+
+                            
+                            <ul class="text">
+                                <div>
+                                <img class="icon" src="home-removebg-preview.png">
+                                
+                                <li>HOME</li>
+                                </div>
+                                <div>
+
+                                
+                                <img class="icon" src="exper-removebg-preview.png">
+                                <li>EXPERIENCE</li>
+                                </div>
+                                <div>
+                                <img class="icon" src="education-removebg-preview.png">
+                                <li>EDUCATION</li>
+                                </div>
+                                <div>
+                                <img class="icon" src="skills-removebg-preview.png">
+                                <li>SKILLS</li>
+                            </div>
+                            <div>
+                                <img src="aboutme-removebg-preview.png">
+                                <li>ABOUT ME</li>
+                                </div>
+                            </ul>
+                        </nav>
+                    </header>
+                    <main>
+                        <div class="content">
+                            <div class="tst">
+                            <p class="detail">Hello, I am Bishal.</p>
+                            <br>
+                            <p>Welcome to my official digitial resume.
+                                You can easily access to my portfolio, Educational journey, Work experiences, and all you will need to know before hiring someone.
+                            </p>
+                            </div>
+                            <img src="img.jpg" class="photo">
+                            </div>
+                        
+                    </main>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/bishal-pandey-a4217021b/" ><img class="ins" src="linke-removebg-preview.png"></a>
+                    <a href="https://www.instagram.com/raavangaming979/profilecard/?igsh=MWZwdHZ3em1xdGoxdg%3D%3D"><img class="ins" src="instag.png"></a>
+                    <a href="https://www.youtube.com/@raavanvlog891"><img  class="ins" src="you-removebg-preview.png"></a>
+                </div>
+
+                <p>AM I SELECTED?</p>
+      <button
+        onclick=" select();
+"
+        class="js-select"
+      >
+        YES
+      </button>
+      <button class="no">NO</button>
+
+            </body>
+            <script>
+            function select() {
+                const buttonElement = document.querySelector(".js-select");
+      
+                if (buttonElement.innerHTML === "YES") {
+                  (buttonElement.innerHTML = "THANK YOU"),
+                    (document.querySelector(".no").innerHTML = `LETS GO`);
+                } else {
+                  buttonElement.innerHTML = "YES";
+                }
+            }
+        </script>
+    </body>
+            </html>

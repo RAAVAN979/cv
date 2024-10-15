@@ -18,34 +18,32 @@
 
                 header{display: flex; padding: 10PX 10PX 10PX 10PX; margin-top: 0px;} 
 
-                nav{display: flex}
-
-                .text{display:flex ; flex-wrap: nowrap;
+                nav{display:flex ; flex-wrap: nowrap;
                 gap: 80px; margin-left:270px; position: fixed; padding: 10px 10px 5px 10px; border: transparent; border-radius: 20px; height: 30px; background-color: rgb(70, 70, 70);}
+
+                
 
              .icon{height: 20px; width: 20px; padding: 0px 0px 0px 0px; margin-left: 0px; z-index: 1;}
 
-                li{font-size: 20px; 
+                 nav a{display: flex; gap:5px; font-size: 20px; 
                 list-style: none; cursor: pointer; color: silver; z-index: 1;}
 
-                ul span{ position: absolute;
+                nav span{ position: absolute;
                      top: 0;
                      left: 0;
-                     width: 95px;
+                     width: 110px;
                      height: 100%;
                      background-color: rgb( 50, 50, 50);
-                       border-radius: 20px; padding-left: 10px;
-                       }
+                       border-radius: 20px; ; margin-left: 5px; padding: 0px 0px 0px 0px;
+                       transition: 0.5s;}
                 
 
-                div header nav ul div{
-                    display: flex; gap: 5px;
-                }
+                
 
-               div header nav ul  div li:hover{
+              /* div header nav a:hover{
                     background-color: aqua;
-                    color: black; border: 2px solid orange; transition: 2s ; border-radius: 30px; padding: 0px 10px 10px 0px;
-                }
+                    color: black; border: 2px solid orange; transition: 2s ; border-radius: 30px; padding: 0px 5px 5px 5px;
+                }*/
 
                 .logo:hover{cursor: pointer;
                     filter: drop-shadow(4px 0px 5px white);
@@ -68,14 +66,15 @@
                             height: 25px; width: 30px; border-radius: 30px; background-color: navajowhite; z-index: 1;
                         }
 
-                        ul li: nth-child(1):hover~span{ left: 0;
-                                                       
-                            
-                        }
-                  ul li: nth-child(2):hover~span{ left: 95px;
-                                                       
-                            
-                        }
+                        nav a:nth-child(1):hover~span{ left: 0; }
+                      
+                 nav a:nth-child(2):hover~span{ left: 150px; width: 180px; }
+
+                 nav a:nth-child(3):hover~span{ left: 370px; width: 180px; }
+
+                 nav a:nth-child(4):hover~span{ left: 600px; width: 120px; }
+
+                 nav a:nth-child(5):hover~span{ left: 770px; width: 150px; }
 
                         .no:hover {
                             position: absolute;
@@ -88,49 +87,26 @@
             </head>
             <body>
                 <img src="profile-pic.png" class="logo">
-                <div class="nav">
+                <div class="navi">
                     <header>
                         <nav>
-                           
-                               
+                              <a href="#"><img class="icon" src="home-removebg-preview.png">
                                 
-                               
-                                
-                                
-                                
-
-
-                                
-
-                                
-
-                            
-                            <ul class="text">
-                                <div>
-                                <img class="icon" src="home-removebg-preview.png">
-                                
-                                <li>HOME</li>
-                                </div>
-                                <div>
-
-                                
-                                <img class="icon" src="exper-removebg-preview.png">
-                                <li>EXPERIENCE</li>
-                                </div>
-                                <div>
+                                HOME</a>
+                                 <a href="#"><img class="icon" src="exper-removebg-preview.png">
+                                EXPERIENCE</a>
+                                <a href="#">
                                 <img class="icon" src="education-removebg-preview.png">
-                                <li>EDUCATION</li>
-                                </div>
-                                <div>
+                                EDUCATION</a>
+                                <a href="#">
                                 <img class="icon" src="skills-removebg-preview.png">
-                                <li>SKILLS</li>
-                                    <span></span>
-                            </div>
-                            <div>
-                                <img src="aboutme-removebg-preview.png">
-                                <li>ABOUT ME</li>
-                                </div>
-                            </ul>
+                                SKILLS</a>
+                                   
+                            
+                                <a href="#"><img src="aboutme-removebg-preview.png">
+                                ABOUT ME</a>
+                                <span></span>
+                           
                         </nav>
                     </header>
                     <main>

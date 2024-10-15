@@ -34,7 +34,7 @@
 
                div header nav ul  div li:hover{
                     background-color: aqua;
-                    color: black; border: 2px solid orange; transition: 2s ; border-radius: 30px; padding: 10px 10px 10px 10px;
+                    color: black; border: 2px solid orange; transition: 2s ; border-radius: 30px; padding: 0px 10px 10px 0px;
                 }
 
                 .logo:hover{cursor: pointer;
@@ -152,7 +152,7 @@
                   (buttonElement.innerHTML = "THANK YOU"),
                     (document.querySelector(".no").innerHTML = `LETS GO`);
                 } else {
-                  buttonElement.innerHTML = "YES";
+                  buttonElement.innerHTML = "YES", document.querySelector(".no").innerHTML = `NO`;
                 }
             }
         </script>

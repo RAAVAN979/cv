@@ -3,7 +3,7 @@
         <head>
             <title>BISHAL PANDEY</title>
             <meta name="author" content="BISHAL PANDEY">
-            <meta name="viewport" width="device-width, initial-scale=0">
+            <meta name="viewport" width="device-width, initial-scale=1.0">
             <meta name="description" content="Welcome to my digitial resume">
             <style>
 
@@ -12,45 +12,47 @@
                 }
                 .logo{height: 90px; width: 90px;}
 
+                nav{display: flex; padding: 10PX 10PX 10PX 10PX; margin-top: 0px;} 
+
+                .text{display:flex ; flex-wrap: wrap;
+                gap: 70px; margin-left:270px; position: relative;  border: transparent; border-radius: 20px; height: 30px; background-color: rgb(70, 70, 70); padding: 0px 5px 0px 5px;}
+
+            
+
+                nav .text button{font-size: 20px; text-decoration: none;
+                cursor: pointer; color: silver; z-index: 1; background-color: transparent; border: none; }
+
+                nav .text span{margin-left: -5px; margin-top: -5px; background: rgb(114, 7, 7); position: absolute; width: 95px; height: 35px; border-radius: 20px; overflow: hidden;} 
+
+
+               nav .text  a:hover~span{ transition: 10ms 2ms ease-in 2ms;
                 
+                    
+               }
 
-                .nav{display: felx;}
+               nav .text  a:nth-child(2):hover~span{ left: 160px; width: 170px;
+                  }
 
-                header{display: flex; padding: 10PX 10PX 10PX 10PX; margin-top: 0px;} 
 
-                nav{display:flex ; flex-wrap: nowrap;
-                gap: 80px; margin-left:270px; position: fixed; padding: 10px 10px 5px 10px; border: transparent; border-radius: 20px; height: 30px; background-color: rgb(70, 70, 70);}
+                  nav .text  a:nth-child(3):hover~span{ 
+                    left: 385px; width: 150px;
+                  }
 
-                
+                  nav .text  a:nth-child(4):hover~span{ left: 590px; width: 110px;
+                    
+                  }
 
-             .icon{height: 20px; width: 20px; padding: 0px 0px 0px 0px; margin-left: 0px; z-index: 1;}
-
-                 nav a{display: flex; gap:5px; font-size: 20px; 
-                list-style: none; cursor: pointer; color: silver; z-index: 1;}
-
-                nav span{ position: absolute;
-                     top: 0;
-                     left: 0;
-                     width: 110px;
-                     height: 100%;
-                     background-color: rgb( 50, 50, 50);
-                       border-radius: 20px; ;  padding: 0px 0px 0px 0px;
-                       transition: 0.5s;}
-                
-
-                
-
-              /* div header nav a:hover{
-                    background-color: aqua;
-                    color: black; border: 2px solid orange; transition: 2s ; border-radius: 30px; padding: 0px 5px 5px 5px;
-                }*/
+                  nav .text  a:nth-child(5):hover~span{ left: 762px; width: 140px;
+                    
+                  }
+   
 
                 .logo:hover{cursor: pointer;
                     filter: drop-shadow(4px 0px 5px white);
                 }
 
                     .content{
-                        margin-top: 100px;  padding: 20px 20px 20px ;  display: flex;                  }
+                        margin-top: 0px; border: 2px solid green; padding: 20px 20px 20px ;  display: flex;                  }
 
                         .photo{float: right; height: 150px; width: 150px; border-radius: 10px;}
 
@@ -63,18 +65,8 @@
                         }
 
                         .ins{
-                            height: 25px; width: 30px; border-radius: 30px; background-color: navajowhite; z-index: 1;
+                            height: 25px; width: 30px; border-radius: 30px; background-color: navajowhite;
                         }
-
-                        nav a:nth-child(1):hover~span{ left: 0; }
-                      
-                 nav a:nth-child(2):hover~span{ left: 155px; width: 180px; }
-
-                 nav a:nth-child(3):hover~span{ left: 380px; width: 180px; }
-
-                 nav a:nth-child(4):hover~span{ left: 605px; width: 120px; }
-
-                 nav a:nth-child(5):hover~span{ left: 785px; width: 150px; }
 
                         .no:hover {
                             position: absolute;
@@ -83,75 +75,195 @@
                             cursor: pointer;
                           }
 
+                          main{padding: 10px 10px 10px 10px; }
+
+                          .js-select{cursor: pointer;}
+                   
+                            .exp, .edU, .skilL, .abME{ color: silver; font-family: verdana;
+    display: none;
+}
+
+                              summary{ cursor: pointer;
+                              list-style: none; padding-inline: 20px 20px 20px 20px; margin-inline: 10px;}
+
+
+
+                          
+                          
             </style>
             </head>
             <body>
+              <header>
+                
                 <img src="profile-pic.png" class="logo">
-                <div class="navi">
-                    <header>
+                
+                   
                         <nav>
-                              <a href="#"><img class="icon" src="home-removebg-preview.png">
+                  
+                            <div class="text">
                                 
-                                HOME</a>
-                                 <a href="#"><img class="icon" src="exper-removebg-preview.png">
-                                EXPERIENCE</a>
-                                <a href="#">
-                                <img class="icon" src="education-removebg-preview.png">
-                                EDUCATION</a>
-                                <a href="#">
-                                <img class="icon" src="skills-removebg-preview.png">
-                                SKILLS</a>
-                                   
+                              <button class="home" onclick="changeSlide('home');">
+                                <img class="icon" src="home-removebg-preview.png"> HOME</button>
+                                <button class="exP" onclick="changeSlide('experience');">
+                                <img class="icon"  src="exper-removebg-preview.png"> EXPERIENCE</button>
+
+                                <button class="edu"  onclick="changeSlide('EDUCATION');">
+                                <img class="icon"  src="education-removebg-preview.png">EDUCATION</button>
+                                <button class="skill"  onclick="changeSlide('SKILLS');"">
+                                <img class="icon" src="skills-removebg-preview.png"> SKILLS </button>
+
+                                <button class="abme"  onclick="changeSlide('ABOUT ME');"><img src="aboutme-removebg-preview.png"> ABOUT ME </button>
+                                  <span></span>
+                            </div>
                             
-                                <a href="#"><img src="aboutme-removebg-preview.png">
-                                ABOUT ME</a>
-                                <span></span>
-                           
                         </nav>
                     </header>
                     <main>
                         <div class="content">
-                            <div class="tst">
+                            <div class="hom">
                             <p class="detail">Hello, I am Bishal.</p>
                             <br>
                             <p>Welcome to my official digitial resume.
                                 You can easily access to my portfolio, Educational journey, Work experiences, and all you will need to know before hiring someone.
                             </p>
-                            </div>
+                           
                             <img src="img.jpg" class="photo">
                             </div>
+                            <div class="exp">
+                              <details class="po">
+                              <summary> <h4>Operator</h4>
+                                Plastic Omnium, Birmingham, UK
+                                September 2023 to Present </summary>
+                                - Maintain high attention to detail and conformance to safety regulations and company standards.
+                                - Ensure smooth and efficient operations of plant equipment and tools.
+                                - Meet productivity targets by maintaining a fast work pace.</details>
+                               <details calss="om"> <summary> <h4>Stock and Sales Data Manager</h4>
+                                Ominca Laboratories Pvt. Ltd.
+                                July 2022 to September 2023</summary>
+                                - Managed sales and stock data, performing detailed analysis to drive monthly sales strategies.
+                                - Played a pivotal role in inventory management and stock optimization for increased efficiency.
+                                - Identified opportunities to improve overall sales and implemented effective strategies.</details> 
+                               <details class="gp">
+                                <summary><h3> Plant Operator</h3>
+                                Grace Pharmaceuticals Pvt. Ltd.
+                                February 2020 to July 2022</summary>
+                                - Ensured smooth production by managing stock levels of raw materials and maintaining safety standards.
+                                - Collaborated with production teams to achieve optimal output and meet company targets.
+                                - Proactively identified areas for improving production efficiency.
+                              </details>
+                               <details class="pa"> <summary><h3> Pharmacy Assistant</h3>
+                                Tinkune Swatha Clinic and Diagnostic Centre
+                                July 2019 to July 2023</summary>
+                                - Managed pharmacy stock, ensuring adequate supplies of medicines and lab materials.
+                                - Provided consultations to patients regarding their treatments, offering guidance on proper medication use.
+                                - Maintained accurate records for stock and patient consultations.
+                                </details>
+                              </div>
+                              <div class="edU">
+                              <details> 
+                              <summary> <h4>Bachelor of Science and Technology in Chemistry</h4>
+                                Tribhuvan University, Butwal, Nepal
+                                October 2015 to April 2019 </summary>
+                                - Majored in Chemistry, with coursework in Maths, Physics, and Computer Science.
+                               </details>
+                              <details>
+                               <summary 
+                               ><h4> Intermediate Science (+2) (A level)</h4> 
+                                New Ratamata Higher Secondary School, Pyuthan, Nepal
+                                August 2013 to August 2015</summary>
+                                - Majored in Physics, Chemistry, Maths, and English.</details>
+                                
+                              </div>
+                              <div class="skilL">
+                              <p>- Computer Skills (MS Office, Basic JavaScript)
+                                - Stock and Sales Data Management
+                                - Plant and Equipment Operation
+                                - Materials Handling and Maintenance
+                                - HTML and CSS
+                                - Data Entry and Analysis
+                                - Strong Communication (Verbal and Written)
+                                - Teamwork and Time Management
+                                - Safety Standards and Compliance
+                                - Customer Relationship Management
+                                </p>
+                              </div>
+                              <div class="abME">
+                                <p>
+                                  A motivated and detail-oriented chemist with a Bachelor's degree in Science and Technology, majoring in Chemistry. Over 3 years of experience in plant management, sales, and stock management within pharmaceutical industries. With a strong interest in technical fields, I am keen to transition into roles that involve tools and equipment in the technical industry. Adept at data analysis, stock maintenance, and ensuring the smooth operation of production environments. Looking to leverage my skills and experience in a dynamic UK-based technical role.
+                                </p>
+                              </div>
+
                         
                     </main>
-                </div>
+                
                 <div class="social">
                     <a href="https://www.linkedin.com/in/bishal-pandey-a4217021b/" ><img class="ins" src="linke-removebg-preview.png"></a>
                     <a href="https://www.instagram.com/raavangaming979/profilecard/?igsh=MWZwdHZ3em1xdGoxdg%3D%3D"><img class="ins" src="instag.png"></a>
                     <a href="https://www.youtube.com/@raavanvlog891"><img  class="ins" src="you-removebg-preview.png"></a>
-                    
                 </div>
 
-                <p>AM I SELECTED?</p>
+                <p class="quest">AM I SELECTED?</p>
       <button
-        onclick=" select();
-"
+        onclick=" select();"
         class="js-select"
-      >
-        YES
-      </button>
+      >YES</button>
       <button class="no">NO</button>
 
             </body>
             <script>
+
             function select() {
-                const buttonElement = document.querySelector(".js-select");
+                const buttonElement = document.querySelector(".quest");
       
-                if (buttonElement.innerHTML === "YES") {
-                  (buttonElement.innerHTML = "THANK YOU"),
-                    (document.querySelector(".no").innerHTML = `LETS GO`);
-                } else {
-                  buttonElement.innerHTML = "YES", document.querySelector(".no").innerHTML = `NO`;
+                if (buttonElement.innerHTML === "AM I SELECTED?") {
+                  buttonElement.innerHTML = `THANK YOU`;
+                } else { buttonElement.innerHTML = `AM I SELECTED?`;
                 }
             }
+function changeSlide(click) {
+    
+    document.querySelector('.hom').style.display ='block';
+    document.querySelector('.exp').style.display ='none';
+    document.querySelector('.edU').style.display ='none';
+    document.querySelector('.skilL').style.display ='none';
+    document.querySelector('.abME').style.display ='none';
+   
+    if (click === "home") {
+      document.querySelector('.hom').style.display ='block';
+    document.querySelector('.exp').style.display ='none';
+    document.querySelector('.edU').style.display ='none';
+    document.querySelector('.skilL').style.display ='none';
+    document.querySelector('.abME').style.display ='none';
+    } else if (click === "experience") {
+      document.querySelector('.hom').style.display ='none';
+    document.querySelector('.exp').style.display ='block';
+    document.querySelector('.edU').style.display ='none';
+    document.querySelector('.skilL').style.display ='none';
+    document.querySelector('.abME').style.display ='none';
+    } else if (click === "EDUCATION") {
+      document.querySelector('.hom').style.display ='none';
+    document.querySelector('.exp').style.display ='none';
+    document.querySelector('.edU').style.display ='block';
+    document.querySelector('.skilL').style.display ='none';
+    document.querySelector('.abME').style.display ='none';
+    } else if (click === "SKILLS") {
+      document.querySelector('.hom').style.display ='none';
+    document.querySelector('.exp').style.display ='none';
+    document.querySelector('.edU').style.display ='none';
+    document.querySelector('.skilL').style.display ='block';
+    document.querySelector('.abME').style.display ='none';
+    } else if (click === "ABOUT ME") {
+      document.querySelector('.hom').style.display ='none';
+    document.querySelector('.exp').style.display ='none';
+    document.querySelector('.edU').style.display ='none';
+    document.querySelector('.skilL').style.display ='none';
+    document.querySelector('.abME').style.display ='block';
+    }
+}
+
+
+            
+      
         </script>
     </body>
             </html>

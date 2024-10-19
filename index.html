@@ -14,35 +14,39 @@
 
                 nav{display: flex; padding: 10PX 10PX 10PX 10PX; margin-top: 0px;} 
 
-                .text{display:flex ; flex-wrap: wrap;
+                .text{display:flex ; flex-wrap: wrap; 
                 gap: 70px; margin-left:270px; position: relative;  border: transparent; border-radius: 20px; height: 30px; background-color: rgb(70, 70, 70); padding: 0px 5px 0px 5px;}
 
             
 
-                nav .text button{font-size: 20px; text-decoration: none;
-                cursor: pointer; color: silver; z-index: 1; background-color: transparent; border: none; }
+                nav .text button{display: flex;  font-size: 20px; text-decoration: none;
+                cursor: pointer; color: white; z-index: 1; background-color: transparent; border:none;  }
 
-                nav .text span{margin-left: -5px; margin-top: -5px; background: rgb(114, 7, 7); position: absolute; width: 95px; height: 35px; border-radius: 20px; overflow: hidden;} 
+                nav .text button img{
+                width: 20px; hieght: 20px;}
 
 
-               nav .text  a:hover~span{ transition: 10ms 2ms ease-in 2ms;
+                nav .text span{margin-left: -5px; margin-top: -5px; background:grey; position: absolute; width: 95px; height: 35px; border-radius: 20px; overflow: hidden;} 
+
+
+               nav .text  button:hover~span{ transition: 10ms 200ms ease-in 2ms;
                 
                     
                }
 
-               nav .text  a:nth-child(2):hover~span{ left: 160px; width: 170px;
+               nav .text  button:nth-child(2):hover~span{ left: 160px; width: 170px;
                   }
 
 
-                  nav .text  a:nth-child(3):hover~span{ 
+                  nav .text  button:nth-child(3):hover~span{ 
                     left: 385px; width: 150px;
                   }
 
-                  nav .text  a:nth-child(4):hover~span{ left: 590px; width: 110px;
+                  nav .text  button:nth-child(4):hover~span{ left: 590px; width: 110px;
                     
                   }
 
-                  nav .text  a:nth-child(5):hover~span{ left: 762px; width: 140px;
+                  nav .text  button:nth-child(5):hover~span{ left: 762px; width: 140px;
                     
                   }
    

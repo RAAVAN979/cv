@@ -3,7 +3,7 @@
         <head>
             <title>BISHAL PANDEY</title>
             <meta name="author" content="BISHAL PANDEY">
-            <meta name="viewport" width="device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="description" content="Welcome to my digitial resume">
             <style>
 
@@ -55,18 +55,20 @@
                     filter: drop-shadow(4px 0px 5px white);
                 }
 
-                    .content{
-                        margin-top: 0px; border: 2px solid green; padding: 20px 20px 20px ;  display: flex;                  }
+                    .content{ height: 60vh; align-items: center; justify-content: center; border-radius: 20px;
+                        margin-top: 0px; box-shadow: 0px 0px 4px 4px silver; background-color: rgb(70, 70, 70); padding: 20px 20px 20px ;  display: flex; }
 
                         .photo{float: right; height: 150px; width: 150px; border-radius: 10px;}
 
-                        .detail{color:aliceblue; font-size: 20px; font-family: verdana; margin-bottom: -10px;} 
+                        .detail{color:aliceblue; font-size: 20px; font-family: cursive; margin-bottom: -10px;} 
 
                         p{color:aliceblue; font-size: 18px;}
                 
                         .social{
                             display: flex; justify-content: center; align-items: center; gap: 20px; background-color: transparent;
                         }
+
+                        ul li{color:white;}
 
                         .ins{
                             height: 25px; width: 30px; border-radius: 30px; background-color: navajowhite;
@@ -85,14 +87,60 @@
                    
                             .exp, .edU, .skilL, .abME{ color: silver; font-family: verdana;
     display: none;
-}
+} 
+ details{color: white}
+                           details summary{ cursor: pointer;
+                              list-style: none; padding: 0px 0px 14px 0px; margin-buttom: 20px;}
 
-                              summary{ cursor: pointer;
-                              list-style: none; padding-inline: 20px 20px 20px 20px; margin-inline: 10px;}
 
 
+                          @media (max-width:500px) {
+                            .content{ margin-top: 80px;}
 
-                          
+                            main .content{height: 40vh; padding: 2px 2px 2px 2px; margin-bottom: 15px;}
+                            main .content .hom .detail{font-family: verdana; font-size: 15px;}
+
+                            main .content p{font-family: verdana; font-size: 10px; }
+
+                            main .content details{color: white; font-size: 10px; list-style: none !important; }
+                            main .content details summary{ list-style: none !important;}
+
+                            .text{gap: 30px; position: fixed; display: flex;  margin-left: 0px; margin-top: 20px; width: 90%; }
+
+                            nav .text button{ font-size: 9px; width: 53px;}
+                            nav .text button img{ width: 10px; height: 10px;}
+
+                            main .content .hom img {display: none;}
+
+                            nav .text span{width: 70px;}
+
+
+                            nav .text  button:hover~span{ transition: 10ms 200ms ease-in 2ms;
+                
+                    
+              }
+
+              nav .text  button:nth-child(2):hover~span{ left: 80px; width: 80px;
+                 }
+
+
+                 nav .text  button:nth-child(3):hover~span{ 
+                   left: 160px; width: 90px;
+                 }
+
+                 nav .text  button:nth-child(4):hover~span{ left: 250px; width: 70px;
+                   
+                 }
+
+                 nav .text  button:nth-child(5):hover~span{ left: 335px; width: 70px;
+                   
+                 }
+
+                
+  
+
+                           
+                          }
                           
             </style>
             </head>
@@ -102,7 +150,7 @@
                 <img src="profile-pic.png" class="logo">
                 
                    
-                        <nav>
+                  <nav>
                   
                             <div class="text">
                                 
@@ -128,7 +176,7 @@
                             <p class="detail">Hello, I am Bishal.</p>
                             <br>
                             <p>Welcome to my official digitial resume.
-                                You can easily access to my portfolio, Educational journey, Work experiences, and all you will need to know before hiring someone.
+                                Where you can easily access to my portfolio, Educational journey, Work experiences, and all you need to know before hiring me.
                             </p>
                            
                             <img src="img.jpg" class="photo">
@@ -179,26 +227,30 @@
                                 
                               </div>
                               <div class="skilL">
-                              <p>- Computer Skills (MS Office, Basic JavaScript)
-                                - Stock and Sales Data Management
-                                - Plant and Equipment Operation
-                                - Materials Handling and Maintenance
-                                - HTML and CSS
-                                - Data Entry and Analysis
-                                - Strong Communication (Verbal and Written)
-                                - Teamwork and Time Management
-                                - Safety Standards and Compliance
-                                - Customer Relationship Management
-                                </p>
+                              <ul>
+                                <li>Computer Skills (MS Office, Basic JavaScript)</li>
+                                  <li>Stock and Sales Data Management</li>
+                                <li>Plant and Equipment Operation</li>
+                                  <li>Materials Handling and Maintenance</li>
+                                <li>HTML and CSS</li>
+                                  <li>Data Entry and Analysis</li>
+                                <li>Strong Communication (Verbal and Written)</li>
+                                  <li>Teamwork and Time Management</li>
+                                    <li>Safety Standards and Compliance</li>
+                                <li>Customer Relationship Management</li>
+                              </ul>
                               </div>
                               <div class="abME">
                                 <p>
-                                  A motivated and detail-oriented chemist with a Bachelor's degree in Science and Technology, majoring in Chemistry. Over 3 years of experience in plant management, sales, and stock management within pharmaceutical industries. With a strong interest in technical fields, I am keen to transition into roles that involve tools and equipment in the technical industry. Adept at data analysis, stock maintenance, and ensuring the smooth operation of production environments. Looking to leverage my skills and experience in a dynamic UK-based technical role.
+                                  Dedicated and detail-oriented chemist with a Bachelor of Science and Technology in Chemistry from Tribhuvan University. Bringing over three years of experience in plant management, stock and sales data management, and pharmaceutical operations. Proven ability to maintain high safety standards while optimizing production processes and managing inventory effectively. Adept in data analysis, with strong skills in MS Office, HTML, and CSS, and a solid foundation in JavaScript.
+
+Possessing excellent communication and teamwork abilities, I thrive in dynamic environments and am eager to transition into technical roles within the industry. My proactive approach to problem-solving and commitment to excellence position me as a valuable asset to any organization seeking a results-driven professional.
                                 </p>
                               </div>
 
                         
                     </main>
+                    <footer>
                 
                 <div class="social">
                     <a href="https://www.linkedin.com/in/bishal-pandey-a4217021b/" ><img class="ins" src="linke-removebg-preview.png"></a>
@@ -212,7 +264,7 @@
         class="js-select"
       >YES</button>
       <button class="no">NO</button>
-
+                    </footer>
             </body>
             <script>
 

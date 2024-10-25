@@ -1,0 +1,162 @@
+body{
+    background-color: rgb(27, 27, 27);
+}
+.logo{height: 90px; width: 90px;}
+
+nav{display: flex; justify-content:center; padding:  10px 10px 10px 10px; margin-top: 0px;} 
+
+.text{display:flex ; flex-wrap: wrap;  padding: 10px 10px 10px 10px;
+gap: 70px; position: relative;  border: transparent; border-radius: 20px; height: 30px; background-color: rgb(70, 70, 70); padding: 0px 5px 0px 5px;}
+
+
+
+nav .text button{display: flex; gap:1px  font-size: 35px; text-decoration: none; justify-content: center; align-items: center;
+cursor: pointer; color: white; z-index: 1; background-color: transparent; border:none; text-align: center; font-family:palatino;  }
+
+nav .text button img{
+width: 25px; hieght: 25px;}
+
+
+nav .text span{margin-left:-5px; margin-top: 0px; background:grey; position: absolute; width: 95px; height: 30px; border-radius: 20px; overflow: hidden;} 
+
+
+nav .text  button:hover~span{ transition: 10ms 200ms ease-in 2ms;
+
+    
+}
+
+nav .text  button:nth-child(2):hover~span{ left: 140px; width: 170px;
+  }
+
+
+  nav .text  button:nth-child(3):hover~span{ 
+    left: 330px; width: 150px;
+  }
+
+  nav .text  button:nth-child(4):hover~span{ left: 515px; width: 110px;
+    
+  }
+
+  nav .text  button:nth-child(5):hover~span{ left: 670px; width: 120px;
+    
+  }
+
+  nav .text  button:nth-child(6):hover~span{ left: 850px; width: 120px;
+    
+  }
+
+
+.logo:hover{cursor: pointer;
+    filter: drop-shadow(4px 0px 5px white);
+}
+
+    .content{ height: 60vh; align-items: center; justify-content: center; border-radius: 20px;
+        margin-top: 0px; box-shadow: 0px 0px 4px 4px silver; background-color: rgb(70, 70, 70); padding: 20px 20px 20px ;  display: flex; }
+
+        .photo{float: right; height: 150px; width: 150px; border-radius: 10px;}
+
+        .detail{color:aliceblue; font-size: 20px; font-family: cursive; margin-bottom: -10px;} 
+
+        p{color:aliceblue; font-size: 18px;}
+
+        .social{
+            display: flex; justify-content: center; align-items: center; gap: 20px; background-color: transparent;
+        }
+
+        ul li{color:white;}
+
+        .ins{
+            height: 25px; width: 30px; border-radius: 30px; background-color: navajowhite;
+        }
+
+ 
+.port{ border: 2px solid black;
+  height: 300px; width: 1000px;
+display: grid; grid-template-rows: 200px 200px; column-gap: 100px; row-gap: 100px;
+justify-content: left;
+}
+
+.ftwo{ display: flex; 
+  
+  height: 150px; width: 1000px; justify-content: center; align-items: center;
+}
+.ltwo{display: flex;  
+  height: 150px; width: 1000px;
+  justify-content: center; align-items: center;
+}
+
+
+ .port a{text-align: center; border:2px solid black; height:150px; font-family: verdana; font-size: 15px; font-weight: bold; min-width: 500px;
+color: purple; text-decoration: none; top: 10px; text-shadow: 0px 0px 3px  white;
+}
+        .no:hover {
+            position: absolute;
+            left: 100px;
+            transition: 2s ease-in;
+            cursor: pointer;
+          }
+
+          main{padding: 10px 10px 10px 10px; }
+
+          .js-select{cursor: pointer;}
+    
+            .exp, .edU, .skilL, .abME, .port{ color: silver; font-family: verdana;
+        display: none;
+                } 
+
+    details{color: white}
+            details summary{ cursor: pointer;
+              list-style: none; padding: 0px 0px 14px 0px; margin-bottom: 20px;}
+
+
+              /* media for phone */
+
+
+
+          @media (max-width:600px) {
+            .content{ margin-top: 80px;}
+
+            main .content{height: 40vh; padding: 2px 2px 2px 2px; margin-bottom: 15px;}
+            main .content .hom .detail{font-family: verdana; font-size: 15px;}
+
+            main .content p{font-family: verdana; font-size: 10px; }
+
+            main .content details{color: white; font-size: 10px; list-style: none !important; }
+            main .content details summary{ list-style: none !important;}
+
+            .text{gap: 30px; position: fixed; display: flex;  margin-left: 0px; margin-top: 20px; width: 90%; }
+
+            nav .text button{ font-size: 9px; width: 53px;}
+            nav .text button img{ width: 10px; height: 10px;}
+
+            main .content .hom img {display: none;}
+
+            nav .text span{width: 70px;}
+
+
+            nav .text  button:hover~span{ transition: 10ms 200ms ease-in 2ms;
+
+    
+}
+
+nav .text  button:nth-child(2):hover~span{ left: 80px; width: 80px;
+  }
+
+
+  nav .text  button:nth-child(3):hover~span{ 
+    left: 160px; width: 90px;
+  }
+
+  nav .text  button:nth-child(4):hover~span{ left: 250px; width: 70px;
+    
+  }
+
+  nav .text  button:nth-child(5):hover~span{ left: 335px; width: 70px;
+    
+  }
+
+  nav .text  button:nth-child(6):hover~span{ left: 335px; width: 70px;
+    
+  }
+
+          }
